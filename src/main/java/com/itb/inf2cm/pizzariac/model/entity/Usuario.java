@@ -4,6 +4,8 @@ public class Usuario {
 
     private long id;
     private String nome;
+    private String cpf;
+    private String tipoUsuario;
     private String email;
     private String senha;
     private String sexo;
@@ -28,6 +30,22 @@ public class Usuario {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getTipoUsuario() {
+        return tipoUsuario;
+    }
+
+    public void setTipoUsuario(String tipoUsuario) {
+        this.tipoUsuario = tipoUsuario;
     }
 
     public String getEmail() {

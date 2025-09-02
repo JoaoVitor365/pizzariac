@@ -4,6 +4,7 @@ public class Produto {
 
     private long id;
     private String nome;
+    private String tipo;
     private String descricao;
     private double valorCompra;
     private double valorVenda;
@@ -24,6 +25,14 @@ public class Produto {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
     public String getDescricao() {
