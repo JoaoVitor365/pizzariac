@@ -1,10 +1,18 @@
-
 package com.itb.inf2cm.pizzariac.model.entity;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "ItemPedido")
 public class ItemPedido {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+    @Column (nullable = false)
     private int quantidadeItem;
+    @Column (columnDefinition = "DECIMAL(5,2)", nullable = false)
     private double valorUnitario;
     private boolean codStatus;
 
